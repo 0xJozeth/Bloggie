@@ -3,7 +3,7 @@ namespace Bloggie.Web.Models.Domain
 {
 	public class BlogPost
 	{
-			public Guid Id { get; set; }
+		public Guid Id { get; set; }
 
 		public string Heading { get; set; }
 
@@ -22,6 +22,10 @@ namespace Bloggie.Web.Models.Domain
         public string Author { get; set; }
 
         public bool Visible { get; set; }
+
+        // create an Icollection/navigation property - tells the entity framework core that this blog post can have multiple tags.
+
+        public ICollection<Tag> Tags { get; set; }
 
     }
 }
