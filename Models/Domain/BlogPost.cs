@@ -23,7 +23,7 @@ namespace Bloggie.Web.Models.Domain
 
         public bool Visible { get; set; }
 
-        // create an Icollection/navigation property - tells the entity framework core that this blog post can have multiple tags.
+        // create an ICollection/navigation property - tells the entity framework core that this blog post can have multiple tags.
 
         public ICollection<Tag> Tags { get; set; }
 
