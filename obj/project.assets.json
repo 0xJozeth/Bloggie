@@ -3461,25 +3461,26 @@
     ]
   },
   "packageFolders": {
-    "/Users/joey/.nuget/packages/": {}
+    "C:\\Users\\ingle\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/joey/Dropbox/Mac/Documents/Github/dotNET Applications/Bloggie/Bloggie.Web/Bloggie.Web.csproj",
+      "projectUniqueName": "C:\\Users\\ingle\\Source\\Repos\\0xJozeth\\Bloggie\\Bloggie.Web.csproj",
       "projectName": "Bloggie.Web",
-      "projectPath": "/Users/joey/Dropbox/Mac/Documents/Github/dotNET Applications/Bloggie/Bloggie.Web/Bloggie.Web.csproj",
-      "packagesPath": "/Users/joey/.nuget/packages/",
-      "outputPath": "/Users/joey/Dropbox/Mac/Documents/Github/dotNET Applications/Bloggie/Bloggie.Web/obj/",
+      "projectPath": "C:\\Users\\ingle\\Source\\Repos\\0xJozeth\\Bloggie\\Bloggie.Web.csproj",
+      "packagesPath": "C:\\Users\\ingle\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ingle\\Source\\Repos\\0xJozeth\\Bloggie\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/joey/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\ingle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/sdk/7.0.307/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3528,7 +3529,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

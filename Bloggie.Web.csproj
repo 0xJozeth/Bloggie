@@ -8,7 +8,7 @@
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
-  <ItemGroup>
+	<ItemGroup>
     <None Remove="Models\Domain\" />
     <None Remove="Data\" />
   </ItemGroup>
