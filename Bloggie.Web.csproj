@@ -8,12 +8,21 @@
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <Compile Remove="Models\Domain\NewFolder1\**" />
+    <Compile Remove="Models\Domain\NewFolder\**" />
+    <Content Remove="Models\Domain\NewFolder1\**" />
+    <Content Remove="Models\Domain\NewFolder\**" />
+    <EmbeddedResource Remove="Models\Domain\NewFolder1\**" />
+    <EmbeddedResource Remove="Models\Domain\NewFolder\**" />
+    <None Remove="Models\Domain\NewFolder1\**" />
+    <None Remove="Models\Domain\NewFolder\**" />
+  </ItemGroup>
 	<ItemGroup>
     <None Remove="Models\Domain\" />
     <None Remove="Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\Domain\" />
     <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
