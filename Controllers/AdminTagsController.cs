@@ -33,7 +33,20 @@ namespace Bloggie.Web.Controllers
 
             bloggieDbContext.Tags.Add(tag);
             bloggieDbContext.SaveChanges();
-            return View("Add");
+            return RedirectToAction("List");
+        }
+
+        [HttpGet]
+        [ActionName("List")]
+
+        public IActionResult List() 
+        {
+
+            // instantiate variable - Use dbContext to read the tags
+            var tags = bloggieDbContext.Tags.ToList();
+
+                // provide the variable
+                return View(tags);
         }
     }
 }

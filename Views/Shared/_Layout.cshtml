@@ -24,7 +24,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
+                                Admin
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item"  
@@ -32,6 +32,12 @@
                                 asp-controller="AdminTags"
                                 asp-action="Add"
                                 >Add Tag</a>
+                                
+                                <a class="dropdown-item"  
+                                asp-area="" 
+                                asp-controller="AdminTags"
+                                asp-action="List"
+                                >Show All Tags</a>
                                 
                             </div>
                         </li>
