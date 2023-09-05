@@ -116,7 +116,7 @@ namespace Bloggie.Web.Controllers
                 return RedirectToAction("List");
             }
 
-            // Show an error notification
+            // Show an error notification 
             return RedirectToAction("Edit", new { id = editTagRequest.Id});
         }
 
