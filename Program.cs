@@ -1,4 +1,5 @@
 ﻿using Bloggie.Web.Data;
+using Bloggie.Web.Repositories;
 using Microsoft.EntityFrameworkCore; // This is required for DbContextOptionsBuilder
 using Microsoft.EntityFrameworkCore.SqlServer; // This is required for UseSqlServer method
 
@@ -11,8 +12,9 @@ builder.Services.AddControllersWithViews();
 
 // Inject Db context inside of the services of our application
 builder.Services.AddDbContext<BloggieDbContext>(options => 
-    options.UseSqlServer(builder.Configuration.GetConnectionString("BloggieDbConnectionString")));
+options.UseSqlServer(builder.Configuration.GetConnectionString("BloggieDbConnectionString")));
 
+builder.Services.AddScoped<ITagRepository,  TagRepository>();
 
 
 var app = builder.Build();
