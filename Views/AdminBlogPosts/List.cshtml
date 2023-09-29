@@ -15,6 +15,7 @@
             <tr>
                 <td>Id</td>
                 <td>Heading</td>
+                <td></td>
             </tr>
         </thead>
         <tbody>
@@ -30,7 +31,15 @@
                                     @tag.Name
                                 </span>
                             }
-                        </div></td>
+                        </div>
+                        </td>
+                        <td>
+                            <a asp-area="" asp-controller="AdminBlogPosts"
+                            asp-action="Edit"
+                            asp-route-id="@blogPost.Id">
+                            Edit
+                            </a>
+                        </td>
                 </tr>
             }
         </tbody>
