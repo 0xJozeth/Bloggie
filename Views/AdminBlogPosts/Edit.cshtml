@@ -12,6 +12,8 @@
 <div class="container py-5">
     @if (Model != null)
     {
+        <form  method="post">
+
         <div class="mb-3">
             <label class="form-label">Id</label>
             <input type="text" class="form-control" id="id" asp-for="Id" readonly />
@@ -69,6 +71,12 @@
                     asp-for="SelectedTags">
             </select>
         </div>
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-dark">Update</button>
+        </div>
+
+        </form>
     }
 
     else
