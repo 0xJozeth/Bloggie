@@ -21,6 +21,12 @@ builder.Services.AddScoped<IBlogPostRepository, BlogPostRepository>();
 
 var app = builder.Build();
 
+// Set ASPNETCORE_ENVIRONMENT to Production if not in development
+if (!app.Environment.IsDevelopment())
+{
+    Environment.SetEnvironmentVariable("ASPNETCORE_ENVIRONMENT", "Production");
+}
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
